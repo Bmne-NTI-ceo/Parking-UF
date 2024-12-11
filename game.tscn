@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfg587fw33g50"]
+
+[ext_resource type="Texture2D" uid="uid://8wteb8irimtn" path="res://Namnlös.png" id="1_2d45w"]
+[ext_resource type="PackedScene" uid="uid://dtgj0precwk46" path="res://car.tscn" id="2_artxu"]
+
+[node name="game" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(52, 34.5)
+scale = Vector2(1.092, 1.08143)
+texture = ExtResource("1_2d45w")
+
+[node name="Node2D" parent="background" instance=ExtResource("2_artxu")]

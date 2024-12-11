@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtgj0precwk46"]
+
+[ext_resource type="Script" path="res://car.gd" id="1_iggcn"]
+[ext_resource type="Texture2D" uid="uid://vpgewd0ww1nm" path="res://bil.png" id="2_pf165"]
+[ext_resource type="Texture2D" uid="uid://bgn06ih35bhp8" path="res://pub_images-original-SRATTBYY_1.jpg" id="3_hrpmd"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="car" type="CharacterBody2D" parent="."]
+position = Vector2(-2, -4)
+script = ExtResource("1_iggcn")
+
+[node name="Sprite2D" type="Sprite2D" parent="car"]
+position = Vector2(0, 3)
+scale = Vector2(-0.226274, 0.200471)
+texture = ExtResource("2_pf165")
+
+[node name="Camera2D" type="Camera2D" parent="car"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_left = -0.102
+anchor_top = 0.421
+anchor_right = -0.102
+anchor_bottom = 0.421
+offset_left = -22.496
+offset_top = -11.808
+offset_right = 23.504
+offset_bottom = 11.192
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(484, 260)
+scale = Vector2(0.09025, 0.09425)
+texture = ExtResource("3_hrpmd")
